@@ -1,0 +1,5 @@
+2019-04-17 15:12:05,329 [CRITICAL] Invalid URL 'http': No schema supplied. Perhaps you meant http://http?
+2019-04-17 15:42:01,027 [ERROR] Invalid URLhttp
+2019-04-17 15:42:01,028 [CRITICAL] Invalid URL 'http': No schema supplied. Perhaps you meant http://http?
+2019-04-17 16:44:59,640 [ERROR] Invalid URLhttp
+2019-04-17 16:44:59,640 [CRITICAL] Invalid URL 'http': No schema supplied. Perhaps you meant http://http?
