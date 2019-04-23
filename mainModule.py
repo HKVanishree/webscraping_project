@@ -1,5 +1,6 @@
 import configparser
 from webScrapping import scrapping
+import logging
 
 def main():
     try:
@@ -14,7 +15,9 @@ def main():
     urlList = config.get('URL', 'url')
     urlsList = urlList.split(",")
 
-    scrapping(keyWords, urlsList)
+    logger = logging.getLogger('example_logger')
+
+    scrapping(keyWords, urlsList, logger)
 
 
 if __name__ == '__main__':

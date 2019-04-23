@@ -1,14 +1,13 @@
 from bs4 import BeautifulSoup
 import requests
-import logging
 import re
 import validators
 
 
 
-def scrapping(keyWords,urlsList):
+def scrapping(keyWords,urlsList,logger):
 
-  logger = logging.getLogger('example_logger')
+
   f = open("Output.csv", "w")
 
   for url in urlsList:
