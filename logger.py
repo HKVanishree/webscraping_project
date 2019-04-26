@@ -5,10 +5,12 @@ import logging
 
 class loggerModule:
   def logging(self):
+    """Get log level from config file"""
     config = configparser.ConfigParser()
     config.read('ConfigFile.ini')
-
     LogLevel = config.get('LOGLEVEL', 'log')
+
+    """"Add formatters to looger object"""
     logging.basicConfig(format='%(asctime)s [%(levelname)s] %(message)s', level=logging.INFO)
     logger = logging.getLogger('example_logger')
     Rthandler = RotatingFileHandler('log/webScrap.log', maxBytes=500, backupCount=5)

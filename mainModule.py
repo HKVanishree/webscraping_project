@@ -3,6 +3,7 @@ from webScrapping import scrapping
 import logging
 
 def main():
+    """Get list of keywords and urls from the configuration file"""
     try:
      config = configparser.ConfigParser()
      config.read('ConfigFile.ini')
@@ -15,7 +16,11 @@ def main():
     urlList = config.get('URL', 'url')
     urlsList = urlList.split(",")
 
+    """Get logger object"""
+
     logger = logging.getLogger('example_logger')
+
+    """Send the list of keywords, urls and logger to  get the count of keywords"""
 
     scrapping(keyWords, urlsList, logger)
 

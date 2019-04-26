@@ -8,6 +8,8 @@ import validators
 def scrapping(keyWords,urlsList,logger):
 
 
+  """Gets the count of kewwords in a particular url"""
+
   f = open("Output.csv", "w")
 
   for url in urlsList:
